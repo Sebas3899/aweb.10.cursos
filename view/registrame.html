@@ -40,8 +40,82 @@
           </ul>
         </div>
       </nav>
+      <br>
       <div class="container">
-          
+          <div class="row">
+            <div class="col-6 offset-3">
+              <fieldset>
+                <legend>Formulario de registro</legend>
+
+                http://127.0.0.1:5500/aweb.10.cursos/RecibirDatos
+
+                nombre=sebastian
+                primerapellido=juarez
+
+                <form action="http://127.0.0.1:5500/aweb.10.cursos/RecibirDatos" method="POST">
+                  <ul style="list-style: none">
+                    <li>
+                      <label for="nombre">Nombre: </label>
+                      <input type="text" name="nombre" id="nombre">
+                    </li>
+                    <li>
+                      <label for="primerApellido">Primer apellido: </label>
+                      <input type="text" name="primerApellido">
+                    </li>
+                    <li>
+                      <label for="segundoApellido">Segundo apellido: </label>
+                      <input type="text" name="segundoApellido">
+                    </li>
+                    <li>
+                      <label for="#">Tipo de Modalidad</label>
+
+                      <input type="checkbox" id="presencial" value="Presencial" name="modalidad" >
+                      <label for="presencial">Presencial: </label>
+
+                      <input type="checkbox" id="remoto" value="Remoto" name="modalidad">
+                      <label for="remoto">Remoto: </label>
+
+                      <input type="checkbox" id="mixto" value="Mixto" name="modalidad">
+                      <label for="mixto">Mixto: </label>
+                    </li>
+                    <li>
+                      <label for="#">Sexo: </label>
+
+                      <input type="radio" name="sexo" id="hombre" value="hombre">
+                      <label for="hombre">Hombre</label>
+
+                      <input type="radio" name="sexo" id="mujer" value="mujer">
+                      <label for="mujer">Mujer</label>
+                    </li>
+                    <li>
+                      <label for="curso">Curso: </label>
+                      <select name="curso" id="curso">
+                        <option value="0">Seleccione...</option>
+                        <option value="1">Creatividad y Diseño</option>
+                        <option value="2">Database system</option>
+                        <option value="3">Aplicaciones moviles con Android</option>
+                        <option value="4">Finanzas Corporativas</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="obsevaciones">Observacoines</label>
+                      <br>
+                      <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus facilis porro error aliquid illo ea quasi dicta officia aliquam pariatur placeat voluptates reiciendis, deserunt nulla quo laborum doloremque. Temporibus?</textarea>
+                    </li>
+                    <li>
+                      <input type="submit" value="Registrar" name="Registrar" id="registrar">
+                      <input type="reset" value="Cancelar" name="reset" id="reset">
+                    </li>
+                  </ul>
+
+                  
+                  
+
+                </form>
+
+              </fieldset>
+            </div>
+          </div>
 
       </div>
 
